@@ -1,5 +1,6 @@
 ---
 import Container from './Container.astro'
+import logo from '../images/logo.webp'
 
 const NavItems = [
   { label: 'Home', path: '/' },
@@ -25,11 +26,8 @@ const NavItems = [
         />
         <div class="relative z-20 w-full flex justify-between lg:w-max md:px-0">
           <a href="#home" aria-label="logo" class="flex space-x-2 items-center">
-            <!-- <div aria-hidden="true" class="flex space-x-1">
-                            <div class="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>
-                            <div class="h-6 w-2 bg-primary"></div>
-                        </div> -->
-            <span class="text-2xl font-bold text-gray-900"> Medhasvini</span>
+            <img src={logo} alt="Logo" class="w-[150px] xl:w-[200px] h-full" />
+            <span class="sr-only"> Medhasvini</span>
           </a>
 
           <div class="relative flex items-center lg:hidden max-h-10">
