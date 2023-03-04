@@ -2,83 +2,89 @@
 import Container from './Container.astro'
 ---
 
-<footer class="text-gray-600">
-  <Container>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 py-5">
-      <div>
-        <h4
-          class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
-        >
-          Menu
-        </h4>
-        <ul>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Home</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">NCERT Solutions</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800"
-              >Solved Question Papers</a
-            >
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Courses</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Video Lessons</a>
-          </li>
-        </ul>
-      </div>
+<footer>
+  <div class="text-gray-600 bg-gray-100 py-10">
+    <Container>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div>
+          <h4
+            class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+          >
+            Menu
+          </h4>
+          <ul>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Home</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">NCERT Solutions</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800"
+                >Solved Question Papers</a
+              >
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Courses</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Video Lessons</a>
+            </li>
+          </ul>
+        </div>
 
-      <div>
-        <h4
-          class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
-        >
-          NCERT Solutions
-        </h4>
-        <ul>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">
-              NCERT solutions for class 10
-            </a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">
-              NCERT solutions for class 9
-            </a>
-          </li>
-        </ul>
-      </div>
+        <div>
+          <h4
+            class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+          >
+            NCERT Solutions
+          </h4>
+          <ul>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">
+                NCERT solutions for class 10
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">
+                NCERT solutions for class 9
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <div>
-        <h4
-          class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
-        >
-          Solved Question Papers
-        </h4>
-        <ul>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">
-              HSLC previous years paper
-            </a>
-          </li>
-        </ul>
+        <div>
+          <h4
+            class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+          >
+            Solved Question Papers
+          </h4>
+          <ul>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">
+                HSLC previous years paper
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </Container>
+    </Container>
+  </div>
 
-  <div class="bg-gray-100">
-    <p class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <span class="text-gray-500 text-sm text-center sm:text-left">
-        Copyright &copy; 2023 Medhasvini. All rights reserved.
-      </span>
-      <span
-        class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm"
+  <div class="bg-gray-50">
+    <Container>
+      <p
+        class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"
       >
-        Designed and Developed by Kabir
-      </span>
-    </p>
+        <span class="text-gray-500 text-sm text-center sm:text-left">
+          Copyright &copy; 2023 Medhasvini. All rights reserved.
+        </span>
+        <span
+          class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm"
+        >
+          Designed and Developed by Kabir
+        </span>
+      </p>
+    </Container>
   </div>
 </footer>
