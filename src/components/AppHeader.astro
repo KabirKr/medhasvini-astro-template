@@ -3,15 +3,15 @@ import Container from './Container.astro'
 
 const NavItems = [
   { label: 'Home', path: '/' },
-  { label: 'NCERT Solutions', path: '/ncert-solutions' },
-  { label: 'Question Papers', path: '/question-papers' },
-  { label: 'Courses', path: '/courses' },
-  { label: 'Video Lessons', path: '/video-lessons' },
+  { label: 'NCERT Solutions', path: '/inner-page' },
+  { label: 'Question Papers', path: '/inner-page' },
+  { label: 'Courses', path: '/inner-page' },
+  { label: 'Video Lessons', path: '/inner-page' },
 ]
 ---
 
 <header>
-  <nav class="z-10 w-full absolute">
+  <nav class="z-10 w-full">
     <Container>
       <div
         class="flex flex-wrap items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative"
@@ -71,7 +71,7 @@ const NavItems = [
                 NavItems.map((item) => (
                   <li>
                     <a
-                      href="#features"
+                      href={item.path}
                       class="block md:px-4 transition hover:text-primary-600"
                     >
                       <span>{item.label}</span>

@@ -23,9 +23,13 @@ import AppHeader from '../components/AppHeader.astro'
     />
     <title>Medhasvini Theme</title>
   </head>
-  <body class="bg-white overflow-x-hidden antialiased text-gray-700">
+  <body
+    class="bg-white overflow-x-hidden antialiased text-gray-700 flex flex-col min-h-screen"
+  >
     <AppHeader />
-    <slot />
+    <div class="flex-1">
+      <slot />
+    </div>
     <AppFooter />
   </body>
 </html>
